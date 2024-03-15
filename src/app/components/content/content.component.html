@@ -1,0 +1,13 @@
+<section class="bg-dark">
+    <div class="container">
+        <div class="row g-5 py-5">
+            <div *ngFor="let doctor of doctors.data" class="col-md-6 text-center">
+                <img src="assets/hero-bg.jpg" alt="image" class="w-100">
+                <h5 class="text-white">{{doctor.first_name+''+doctor.last_name}}</h5>
+                <p class="text-white">{{doctor.mobile}}</p>
+                <p class="text-white">{{doctor.biography}}</p>
+                <p class="text-white">{{doctor.price}}</p>
+            </div>
+        </div>
+    </div>
+</section>
